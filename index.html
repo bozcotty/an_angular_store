@@ -2,15 +2,17 @@
 <html ng-app="gemStore">
   <head>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="application.css" />
     <script type="text/javascript" src="angular.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="products.js"></script>
   </head>
 
-  <body ng-controller="StoreController as store">
+  <body id="centerish" ng-controller="StoreController as store">
     <!--  Store Header  -->
     <header>
       <h1 class="text-center">Flatlander Crafted Gems</h1>
-      <h2 class="text-center">– an Angular store –</h2>
+      <h2 class="text-center">an Angular store</h2>
     </header>
 
     <!--  Products Container  -->
@@ -24,8 +26,8 @@
 
         <!-- Product Tabs  -->
         <product-tabs></product-tabs>
-
       </div>
+
     </div>
   </body>
 </html>
