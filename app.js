@@ -1,7 +1,7 @@
  (function() {
     var app = angular.module('gemStore', ['store-directives']);
 
-    app.controller('StoreController', ['$http', function($http){
+    app.controller('GemstoreController', ['$http', function($http){
       var store = this;
       store.products = [];
       $http.get("/store-products.json").success(function(data) {
